@@ -30,7 +30,7 @@ void mergeSort(int arr[], int low, int high){
     if (low >= high) { return;}
     int mid = (low + high) >> 1;
     mergeSort(arr, low, mid);
-    mergeSort(arr, low + 1, high);
+    mergeSort(arr, mid + 1, high);
     merge(arr, low, mid, high);
 }
 
